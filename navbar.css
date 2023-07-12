@@ -1,16 +1,40 @@
-*{border: 0;
-margin: 0;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+* {
+  border: 0;
+  margin: 0;
+  font-family: "Sans Sherif";
 }
 
 nav {
-    width: 100%;
-    height: 150px;
-    display: flex;
-    justify-content: space-around;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(0,50,250,0.5);
+  position: sticky;
+  top: 0;
+  margin-top:10px;
 }
 
 .nav-items {
-text-decoration: none;
+  display: flex;  
+  gap: 30px;
+  list-style: none;
+  height: 150px;
+  align-items: center;
+  font-size: 28px;
+  font-weight: 600;
 }
 
+ul li a {
+    text-decoration: none;
+}
+
+main {
+    height: 2000px;
+    background-color: rgba(0,255,100,0.5);
+}
+
+main>h4, main>ul {
+    margin: 20px;
+    font-size: x-large
+}
