@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-content {
+            display: flex;
+            border: 1px solid red;
+            width: 500px;
+            height: 400px;
+            padding: 40px;
+             align-items: center;
+       
+        }
+        h3{
+            text-align: right;
+            width: 300px;
+        }
+        button{           
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .flex-container{
+            display: flex;
+            flex-wrap: wrap;
+            border: 2px solid red;
+            width: 100%;        
+        }
+
+        .flex-container>div {
+            border: 2px solid blue;
+            padding: 15px;
+            margin: 15px;         
+            width: 300px;
+        }
+
+        .flex-container>div>h1 {
+            background-color: purple;  
+            text-align: center;          
+        }
+
+        .flex-container>div>h3 {
+            background-color: rgb(220, 11, 220);
+            margin-top: -5px;                        
+        }
+
+        .flex-container>div>h3>li {
+            text-align: left;
+            list-style: none;                      
+        }
+
+        .flex-container>div>p {            
+            background-color: blanchedalmond;
+        }
+
+        @media secreen and (max-width: 576px){
+            .flex-container{
+            display: flex;
+            flex-direction: column;
+            border: 2px solid red;
+            width: 100%;        
+        }
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="flex-content">
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore eum, dolorum quo tempora dolores omnis perferendis in at tenetur expedita.</h3>
+        <button>Sign in</button>
+    </div>
+    <section class="flex-container">
+        <div class="flex-item-1">
+            <h1>display:flex;</h1>
+            <h3></h3>
+            <h3></h3>
+            <h4>Available options are:</h4>
+            <p><li></li>
+            <li></li>
+            <li></li>
+            <li></li></p>
+        </div>
+        <div class="flex-item-2">
+            <h1>flex-direction:</h1>
+            <h3></h3>
+            <h3></h3>
+            <h4>Available options are:</h4>
+            <p>row, row-reverse, column, column-reverse</p>
+        </div>
+        <div class="flex-item-3">
+            <h1>flex-wrap</h1>
+            <h3></h3>
+            <h3></h3>
+            <h4>Available options are:</h4>
+            <p>wrap| nowrap| wrap-reverse;</p>
+        </div>
+        <div class="flex-item-4">
+            <h1>flex-flow</h1>
+            <h3></h3>
+            <h3></h3>
+            <h4>Available options are:</h4>
+            <p></p>
+        </div>
+        <div class="flex-item-5">
+            <h1>flex-grow</h1>
+            <h3></h3>
+            <h3></h3>
+            <h4>Available options are:</h4>
+            <p></p>
+        </div>
+        <div class="flex-item-6">
+            <h1>flex-shrink</h1>
+            <h3></h3>
+            <h3></h3>
+            <h4>Available options are:</h4>
+            <p></p>
+        </div>
+        <div class="flex-item-7">
+            <h1>flex-basis</h1>
+            <h3></h3>
+            <h3></h3>
+            <h4>Available options are:</h4>
+            <p></p>
+        </div>
+        <div class="flex-item-8">
+            <h1>flex</h1>
+            <h3></h3>
+            <h3></h3>
+            <h4>Available options are:</h4>
+            <p></p>
+        </div>
+        <div class="flex-item-9">
+            <h1>justify-content</h1>
+            <h3><li>-Used for horizontal alignment</li>
+            <li>-used inside flex container</li>
+            </h3>
+            <h3></h3>
+            <h4>Available options are:</h4>
+            <p><li>flex-start</li>
+            <li>flex-end</li>
+            <li>center</li>
+            <li>space-around</li>
+            <li>space-between</li>
+            <li>space-evenly</li> </p>
+        </div>
+        <div class="flex-item-10">
+            <h1>align-items</h1>
+            <h3><li>-used for vertical alignment</li>
+            <li>-used in flex container</li>
+            <li>-height property needed to be effective for align-items</li> </h3>
+            <h3></h3>
+            <h4>Available options are:</h4>
+            <p><li>flex-start</li>
+            <li>flex-end</li>
+            <li>center</li>
+            <li>stretch[default value]</li>
+            <li>baseline</li> </p>
+        </div>
+        <div class="flex-item-11">
+            <h1>align-content</h1>
+            <h3><li>-used for vertical alignment.</li>
+            <li>-used while flex-wrap: wrap/wrap-reverse is set.</li>
+            <li></li></h3>
+            <h3></h3>
+            <h4>Available options are:</h4>
+            <p><li>flex-start</li>
+            <li>flex-end</li>
+            <li>center</li>
+            <li>stretch</li>
+            <li>space-around</li>
+            <li>space-between</li>
+            <li>space-evenly</li> </p>
+        </div>
+        <div class="flex-item-12">
+            <h1>align-self</h1>
+            <h3><li>-used for vertical alignment.</li>
+            <li>-used for individual flex item</li></h3>
+            <h3></h3>
+            <h4>Available options are:</h4>
+            <p><li>flex-start</li>
+            <li>flex-end</li>
+            <li>center</li>
+            <li>stretch [default value]</li>
+            <li>baseline</li>
+            <li>auto [is used to follow parent item alignment]</li></p>
+        </div>
+        <div class="flex-item-13">
+            <h1>order</h1>
+            <h3><li>-is used inside/with flex item</li></h3>
+            <h3></h3>
+            <h4>Available options are:</h4>
+            <p><li>0 is default value</li>
+            <li>minimum numbered item will be at the first place</li>
+            <li>hightest numbered item will be at the last place</li></p>
+        </div>
+        <div class="flex-item-14">
+            <h1>gap</h1>
+            <h3></h3>
+            <h3></h3>
+            <h4>Available options are:</h4>
+            <p></p>
+        </div>
+    </section>
+</body>
+</html>
